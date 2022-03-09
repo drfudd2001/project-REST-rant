@@ -9,7 +9,7 @@ Tasks that will be completed to make this app functional:
     - [ ] Part 3: Making more views, creating a layout page, and expanding your README
     - [ ] Part 4: Adding some style with CSS
     - [ ] Part 5: Forms, validation, and navigation
-    - [ ]  Part 6: Implementing delete functionality and adding a DELETE route
+    - [ ] Part 6: Implementing delete functionality and adding a DELETE route
     - [ ] Part 7: Implementing edit form and functionality, adding a PUT route
     - [ ] Part 8: Implementing the Mongoose ODM
     - [ ] Part 9: Seed data, validations, and helper methods
