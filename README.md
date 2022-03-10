@@ -38,7 +38,7 @@ REST-rant is an app where users can review restaurants.
 **places** 
 
 | Field | Type |
-| ---------- | ------------ |
+| - | - |
 | _id | Object ID |
 | name | String |
 | city | String |
@@ -49,7 +49,7 @@ REST-rant is an app where users can review restaurants.
 **rants**
 
 | Field | Type |
-| ---------- | ------------ |
+| - | - |
 | _id | Object ID |
 | place_id | ref(places) Object_Id |
 | rant | Boolean |
