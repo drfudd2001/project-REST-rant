@@ -1,8 +1,6 @@
 require('dotenv').config()
 const express = require('express')
-const req = require('express/lib/request')
 const app = express()
-
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
@@ -16,4 +14,4 @@ app.get('*', (req, res) => {
     res.render('error404')
 })
 
-app.listen(process.env.PORT)
+app.listen(process.env.PORT) 
