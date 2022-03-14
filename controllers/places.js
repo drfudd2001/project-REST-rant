@@ -5,13 +5,13 @@ router.get('/', (req, res) => {
         name: 'D nasty Chinese Restaurant',
         city: 'Seattle',
         state: 'WA',
-        cuisines: 'Thai, Pan-Asian',
+        cuisines: 'Chinese, Pan-Asian',
         pic: './images/dnasty.jpg'
     }, {
         name: "Willy's Wonderland",
         city: 'Phoenix',
         state: 'AZ',
-        cuisines: 'Coffee, Bakery',
+        cuisines: 'Pizza, Burgers',
         pic: './images/ww.jpg'
     }]
     res.render('places/index', { places })
