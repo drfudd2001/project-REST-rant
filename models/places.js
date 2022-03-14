@@ -3,11 +3,11 @@ module.exports = [{
     city: 'Seattle',
     state: 'WA',
     cuisines: 'Chinese, Pan-Asian',
-    pic: './images/dnasty.jpg'
+    pic: '../images/dnasty.jpg'
 }, {
     name: "Willy's Wonderland",
     city: 'Phoenix',
     state: 'AZ',
     cuisines: 'Pizza, Burgers',
-    pic: './images/ww.jpg'
+    pic: '../images/ww.jpg'
 }]
