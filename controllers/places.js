@@ -17,11 +17,11 @@ router.post('/', (req, res) => {
         req.body.state = 'USA'
     }
     places.push(req.body)
-    res.redirect('/places')
+    res.redirect('places')
 })
 
 router.get('/new', (req, res) => {
-    res.render('./places/new')
+    res.render('places/new')
 })
 
 router.get('/:id', (req, res) => {
@@ -33,16 +33,30 @@ router.get('/:id', (req, res) => {
         res.render('error404')
     }
     else {
-      res.render('places/show', { place: places[id]})
+      res.render('places/show', { place: places[id], id})
     }
   })
 
 router.put('/:id', (req, res) => {
-    res.send('PUT /places/:id stub')
+    res.send('PUT places/:id stub')
 })
 
 router.get('/:id/edit', (req, res) => {
-    res.send('GET /places/:id/edit stub')
+    res.send('GET places/:id/edit stub')
+})
+
+router.delete('/places/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+      res.render('error404')
+    }
+    else if (!places[id]) {
+        res.render('error404')
+    }
+    else {
+        places.splice(id, 1)
+        res.redirect('places/1')
+    }
 })
 
 module.exports = router
