@@ -26,7 +26,7 @@ function edit_form (data) {
                       <label htmlFor="state">State</label>
                           <div>
                           <select id="state" name="state">
-                              <option value="---">---</option>
+                              <option value="USA">USA</option>
                               <option value="Alabama">Alabama</option>
                               <option value="Alaska">Alaska</option>
                               <option value="Arizona">Arizona</option>
