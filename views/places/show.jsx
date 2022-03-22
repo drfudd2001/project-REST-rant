@@ -7,7 +7,10 @@ function show (data) {
           <main>
             <div className="row">
               <div className="col-sm-6">
-                <img src={ data.place.pic} alt={ data.place.name } />
+                <img src={data.place.pic} alt={data.place.name} />
+                <h3>
+                  Located in {data.place.city}, {data.place.state}
+                </h3>
               </div>
               <div className="col-sm-6">
                 <h1>{ data.place.name }</h1>
@@ -19,22 +22,19 @@ function show (data) {
                 </h3>
                 <br />
                 <h2>
-                  Description
+                Description
                 </h2>
                 <h3>
-                  Founded in { data.place.founded }
+                  {data.place.showEstablished()}
                 </h3>
-                <h3>
-                  Located in { data.place.city }, { data.place.state }
-                </h3>
-                <h3>
-                  Serving { data.place.cuisine }
-                </h3>
+                <h4>
+                  Serving {data.place.cuisines}
+                </h4>
                 <br />
-                <a href={`/places/${data.i}/edit`} className="btn btn-warning">
+                <a href={`/places/${data.place.id}/edit`} className="btn btn-warning">
                   Edit
                 </a>{` `}
-                <form method="POST" action={`/places/${data.i}?_method=DELETE`}>
+                <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}>
                   <button type="submit" className="btn btn-danger">
                     Delete
                   </button>
