@@ -5,9 +5,9 @@ function new_form (data) {
     let message = ''
     if (data.message) {
       message = (
-        <h4 className="alert-danger">
-          {data.message}
-        </h4>
+      <h4 class="alert alert-dark" role="alert">
+        {data.message}
+      </h4>
       )
     }
     return (
