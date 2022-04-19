@@ -14,14 +14,14 @@ REST-rant is an app where users can review restaurants.
 - [x] Part 8: Implementing the Mongoose ODM
 - [x] Part 9: Seed data, validations, and helper methods
 - [x] Part 10: Adding commentary: rants and raves
-- [ ] Part 11: Populating data for star ratings
-- [ ] Part 12: Deploying your project
+- [x] Part 11: Populating data for star ratings
+- [x] Part 12: Deploying your project
 
 ## Tech Usage
 
 **CSS Framework:** Bootstrap
 
-**Stack:** MongoDB, Express, NodeJS
+**Stack:** MongoDB, Express, NodeJS, Heroku
 
 **Server-Side Rendering:** JSX
 
@@ -42,6 +42,7 @@ REST-rant is an app where users can review restaurants.
 | DELETE | `/places/:id` | Delete a place |
 | POST | `/places/:id/rant` | Add rant to a place |
 | DELETE | `/places/:id/rant/:rantId` | Delete a rant |
+| GET | * | 404 page (matches any route not defined above) |
 
 ## Database
 
